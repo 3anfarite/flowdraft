@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from '../assets/workflowLogo.PNG'
+import logo from '../assets/workflowLogo.png'
 
 
 const login = () => {

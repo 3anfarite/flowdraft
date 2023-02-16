@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useContext, useState } from 'react'
 import { CartContext } from '../context/shopContext'
 import MiniCart from './MiniCart'
-import logo from '../assets/workflowLogo.PNG'
+import logo from '../assets/workflowLogo.png'
 import dynamic from 'next/dynamic'
 import Link from 'next/link';
 

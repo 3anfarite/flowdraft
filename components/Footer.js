@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from '../assets/lightworkflow.PNG'
+import logo from '../assets/lightworkflow.png'
 import Link from 'next/link';
 
 const navigation = [
