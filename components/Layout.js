@@ -3,12 +3,12 @@ import Nav from "./Nav"
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <div className="flex flex-col justify-between min-h-screen bg-cgrey ">
         <Nav/>
 
-        <main>
+        <div>
             {children}
-        </main>
+        </div>
         
         <footer>
             <Footer/>

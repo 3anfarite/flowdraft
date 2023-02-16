@@ -1,7 +1,8 @@
 import Hero from '../components/Hero'
 import ProductList from '../components/ProductList'
-import { getProductsInCollection } from '../lib/shopify'
 import Head from 'next/head'
+import AboutSection from '../components/AboutSection';
+import CoursesSection from '../components/CoursesSection';
 
 export default function Home({ products }) {
   return (
@@ -21,15 +22,17 @@ export default function Home({ products }) {
         <meta property="og:site_name" content="Modern eCommerce" />
       </Head>
       <Hero/>
+      <AboutSection/>
+      <CoursesSection/>
       <ProductList products={products}/>
    </div>
   )
 }
 
 export async function getStaticProps(context){
-  const products = await getProductsInCollection()
-
-  return{
-    props:{ products },
-  }
+  const res = await fetch('https://fakestoreapi.com/products?limit=4');
+  const data = await res.json();
+  return {
+      props: { products: data }
+    }
 }
