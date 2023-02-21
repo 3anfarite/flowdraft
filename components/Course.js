@@ -1,20 +1,41 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import Link from "next/link"
+
 
 const Course = () => {
    return (
-      <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-         <div className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-         </div>
-         <div className="mt-4">
-            <h3 className="text-black text-xs tracking-widest font-ibm mb-1">CATEGORY</h3>
-            <h2 className="text-black title-font text-lg font-medium">The 400 Blows</h2>
-            <p className="mt-1">$18.40</p>
-         </div>
-      </div>
+
+      <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div className="max-w-[370px] bg-white mx-auto  mb-10">
+              <div className="overflow-hidden mb-3">
+                <img src="https://source.unsplash.com/random" alt="image" className="w-full"
+                />
+              </div>
+              <div className="p-5" >
+                <h3>
+                  <a href="javascript:void(0)" className="font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-black hover:text-gray">
+                    Meet AutoManage, the best AI management tools
+                  </a>
+                </h3>
+                <p className="text-base text-body-color">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="mt-5 max-w-md mx-auto hidden md:flex md:mt-8">
+                  <Link href="#discover-more">
+                    <a className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
+                      Enroll now
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
    )
 }
 export default dynamic(() => Promise.resolve(Course), {
    ssr: false
- })
+})

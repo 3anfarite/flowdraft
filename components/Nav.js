@@ -49,11 +49,6 @@ const Nav = () => {
         <div className={`items-center justify-between ${open ? "block" : "hidden"} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 mt-4 border border-white rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-cgrey dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link href="/about" passHref>
-                <a className="block py-2 pl-3 mr-4 text-black rounded  md:text-black md:p-0">About</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/shop" passHref>
                 <a className="block py-2 pl-3 pr-4 text-black rounded  md:text-black md:p-0">Shop</a>
               </Link>
@@ -61,6 +56,16 @@ const Nav = () => {
             <li>
               <Link href="/courses" passHref>
                 <a className="block py-2 pl-3 pr-4 text-black rounded  md:text-black md:p-0">Courses</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" passHref>
+                <a className="block py-2 pl-3 pr-4 text-black rounded  md:text-black md:p-0">Blog</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" passHref>
+                <a className="block py-2 pl-3 mr-4 text-black rounded  md:text-black md:p-0">Contact</a>
               </Link>
             </li>
 

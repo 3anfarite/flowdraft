@@ -3,6 +3,8 @@ import ProductList from '../components/ProductList'
 import Head from 'next/head'
 import AboutSection from '../components/AboutSection';
 import CoursesSection from '../components/CoursesSection';
+import CourseList from '../components/CourseList';
+import Testimonials from '../components/Testimonials';
 
 export default function Home({ products }) {
   return (
@@ -22,9 +24,10 @@ export default function Home({ products }) {
         <meta property="og:site_name" content="Modern eCommerce" />
       </Head>
       <Hero/>
-      <AboutSection/>
       <CoursesSection/>
-      <ProductList products={products}/>
+      <Testimonials/>
+      <CourseList/>
+      
    </div>
   )
 }

@@ -11,6 +11,7 @@ module.exports ={
     SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN
   },
   images:{
-    domains:['fakestoreapi.com']
+    domains:
+      ['fakestoreapi.com' ,'source.unsplash.com', 'picsum.photos' ]
   }
 } 

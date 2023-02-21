@@ -20,18 +20,18 @@ export default function Footer() {
         </Link>
         <ul className="flex flex-wrap items-center mb-6  text-sm text-white sm:mb-0 dark:text-gray-400">
           <li>
-          <div className="mr-4 hover:underline font-ibm px-10 md:mr-6">
-            <Link href="/about" className="mr-4 hover:underline md:mr-6 ">About</Link>
-          </div>
-          </li>
-          <li>
             <div className="mr-4 hover:underline font-ibm px-10 md:mr-6">
               <Link href="/shop" >Shop</Link>
             </div>
           </li>
           <li>
           <div className="mr-4 hover:underline font-ibm px-10 md:mr-6">
-            <Link href="/courses" className="mr-4 hover:underline md:mr-6 ">All courses</Link>
+            <Link href="/courses" className="mr-4 hover:underline md:mr-6 ">Courses</Link>
+          </div>
+          </li>
+          <li>
+          <div className="mr-4 hover:underline font-ibm px-10 md:mr-6">
+            <Link href="/blog" className="mr-4 hover:underline md:mr-6 ">Blog</Link>
           </div>
           </li>
         </ul>
