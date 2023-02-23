@@ -1,12 +1,12 @@
 import Hero from '../components/Hero'
-import ProductList from '../components/ProductList'
 import Head from 'next/head'
-import AboutSection from '../components/AboutSection';
 import CoursesSection from '../components/CoursesSection';
 import CourseList from '../components/CourseList';
 import Testimonials from '../components/Testimonials';
 
 export default function Home({ products }) {
+
+ 
   return (
    <div className="">
       <Head>
@@ -22,8 +22,10 @@ export default function Home({ products }) {
         content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more."/>
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Modern eCommerce" />
+        
       </Head>
       <Hero/>
+      
       <CoursesSection/>
       <Testimonials/>
       <CourseList/>
