@@ -21,7 +21,7 @@ const contact = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label for="email" className="leading-7 text-sm font-ibm text-black">Email</label>
-            <input type="email" id="email" name="email" className="w-full  border border-black bg-white focus:bg-opacity-50 text-base outline-none text-black text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="email" id="email" name="email" className="w-full  border border-black bg-white focus:bg-opacity-50 text-base outline-none  text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
         <div className="p-2 w-full">

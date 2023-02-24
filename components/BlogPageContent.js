@@ -1,25 +1,10 @@
 import React from 'react'
-import Script from 'next/script'
 
 
 const BlogPageContent = () => {
   return (
     <>
-      <Script src="https://substackapi.com/widget.js" async></Script>
-      <Script>
-        {`window.CustomSubstackWidget = {
-            substackUrl: "mahmoudramdane.substack.com",
-          placeholder: "example@gmail.com",
-          buttonText: "Subscribe",
-          theme: "custom",
-          colors: {
-            primary: "#231F20",
-            input: "#F1F1F1",
-            email: "#231F20",
-            text: "#FFFFFF",
-          }
-       };`}
-      </Script>
+      
       <div className="max-w-screen-lg mx-auto">
 
         <main className="mt-10">
@@ -107,7 +92,6 @@ const BlogPageContent = () => {
 
             {/* News letter? */}
 
-            <div className="p-4" id="custom-substack-embed" ></div>
 
             {/* <div className="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
           <div className="p-4 border-t border-b md:border md:rounded">

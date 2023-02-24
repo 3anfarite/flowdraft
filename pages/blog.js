@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Script from 'next/script'
 import BlogCard from '../components/BlogCard'
 
 
 const blog = () => {
+
+  useEffect(() => {
+    
+  }, [])
+  
+
   return (
     // <div><iframe src="https://macad.speckle.xyz/embed?stream=6928630d02&commit=449d11214e&transparent=true&autoload=true&hidecontrols=true&hidesidebar=true&commentslideshow=true" width="600" height="400" frameborder="0"></iframe></div>
 
@@ -11,7 +17,7 @@ const blog = () => {
 
 
 
-      <Script>
+      <Script  id='substack-feed-embed' >
         {`window.SubstackFeedWidget = {
           substackUrl: "mahmoudramdane.substack.com",
           posts: 12,

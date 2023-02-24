@@ -15,7 +15,7 @@ const NLModal = ({ onClose, visible }) => {
 
          
 
-         <Script>
+         <Script  id="custom-substack-embed" >
             {`window.CustomSubstackWidget = {
                substackUrl: "mahmoudramdane.substack.com",
             placeholder: "example@gmail.com",
