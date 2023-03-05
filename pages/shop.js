@@ -2,7 +2,7 @@ import ShopProductCard from './../components/ShopProductCard';
 import { getProducts } from "./api/gumroad";
 
 
-const Shop = ({ products }) => {
+const shop = ({ products }) => {
 
 
   return (
@@ -27,7 +27,7 @@ const Shop = ({ products }) => {
   )
 }
 
-export default Shop
+export default shop
 
 export async function getStaticProps() {
   const products = await getProducts();
