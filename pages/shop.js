@@ -1,5 +1,4 @@
 import ShopProductCard from './../components/ShopProductCard';
-import { getProducts } from "./api/gumroad";
 
 
 const shop = ({ products }) => {
@@ -30,7 +29,21 @@ const shop = ({ products }) => {
 export default shop
 
 export async function getStaticProps() {
-  const products = await getProducts();
+
+  const options = {
+    headers: {
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+  };
+
+  const res = await fetch(
+    `https://api.gumroad.com/v2/products?access_token=${process.env.ACCESS_TOKEN}&app_id=${process.env.APPLICATION_ID}&app_secret=${process.env.APPLICATION_SECRET}`,
+    options
+  );
+  const data = await res.json();
+  const products = data.products
+
 
   return {
     props: {
