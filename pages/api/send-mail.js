@@ -16,7 +16,7 @@ export default async function sendEmail(req, res) {
 
   try {
     await transporter.sendMail({
-      from: email,
+      from: userName,
       to: process.env.EMAIL_ADDRESS,
       subject: subject,
       text: `Email from ${email} \n ${message}`,
