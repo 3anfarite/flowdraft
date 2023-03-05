@@ -14,12 +14,14 @@ module.exports = {
       black: '#231F20',
       gray: '#505050',
       cgrey: '#F1F1F1',
-      white: '#FFF'
+      white: '#FFF',
+      cgray:"#8B94A3"
     },
     extend:{
       backgroundImage: {
         'hero': "url('../assets/heroBackground.jpg')",
         'mhero': "url('../assets/heroMobile.jpg')",
+        'cdetail': "url(../assets/courseDetail.jpeg)"
       },
     },
     fontFamily: {

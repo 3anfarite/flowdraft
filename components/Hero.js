@@ -39,11 +39,11 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl font-eb xl:text-6xl font-bold tracking-tight mb-12">The best offer <br /><span className=" font-eb text-black">for your business</span></h1>
             <p className="mb-4 font-alt ">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. </p>
             <div className="mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
-              <Link href="#discover-more">
-                <a className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
+         
+                <a href="#discover-more" className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
                   Discover More
                 </a>
-              </Link>
+         
             </div>
           </div>
           <div className="relative mb-12 lg:mb-0">

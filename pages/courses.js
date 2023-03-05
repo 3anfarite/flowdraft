@@ -2,7 +2,7 @@ import React from 'react'
 import Course from '../components/Course'
 import dynamic from 'next/dynamic'
 
-const courses = () => {
+const courses = ({courses}) => {
   return (
     <section className="pt-20 px-10 lg:pt-[120px] pb-10 lg:pb-20">
         <div className="flex flex-wrap justify-center -mx-4">
@@ -22,9 +22,11 @@ const courses = () => {
           </div>
         </div>
         <div className="flex flex-wrap ">
-          <Course/>
-          <Course/>
-          <Course/>
+        {
+             courses.map(course => (
+               <Course key={course.id} course={course} />
+             ))
+           }
         </div>
 
 
@@ -32,6 +34,15 @@ const courses = () => {
   )
 }
 
-export default dynamic(() => Promise.resolve(courses), {
-  ssr: false
-})
+export default courses
+
+export async function getStaticProps() {
+  const data = await import("../assets/data/courseData.json");
+  const courses = data.courses;
+
+  return {
+    props: {
+      courses,
+    },
+  };
+}

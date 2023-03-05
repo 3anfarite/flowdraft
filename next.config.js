@@ -12,6 +12,6 @@ module.exports ={
   },
   images:{
     domains:
-      ['fakestoreapi.com' ,'source.unsplash.com', 'picsum.photos' ]
+      ['fakestoreapi.com' ,'source.unsplash.com', 'picsum.photos', 'public-files.gumroad.com','dummyimage.com' ]
   }
 } 
