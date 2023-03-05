@@ -1,14 +1,10 @@
-import {useEffect} from 'react'
 import ShopProductCard from './../components/ShopProductCard';
 import { getProducts } from "./api/gumroad";
 
 
 const Shop = ({ products }) => {
 
-  useEffect(() => {
-    console.log(products);
-  }, [])
-  
+
   return (
 
     <div className="bg-cgrey">
