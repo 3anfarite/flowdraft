@@ -8,7 +8,7 @@ import NLModal from './../components/NLModal';
 import CalendlyComponent from '../components/CalendlyComponent';
 
 
-export default function Home({ courses }) {
+export default function Home({ courses, hero }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -43,7 +43,7 @@ export default function Home({ courses }) {
         <meta property="og:site_name" content="Modern eCommerce" />
 
       </Head>
-      <Hero />
+      <Hero hero={hero} />
       <NLModal onClose={handleClose} visible={isOpen} />
 
       <CoursesSection />
@@ -61,9 +61,12 @@ export async function getStaticProps() {
   const data = await import("../assets/data/courseData.json");
   const courses = data.courses;
 
+  const results = await import("../assets/data/HeroSection.json");
+  const hero = results.default;
+
   return {
     props: {
-      courses,
+      courses,hero
     },
   };
 }
