@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import { useContext, useState } from 'react'
-import { CartContext } from '../context/shopContext'
-import MiniCart from './MiniCart'
 import logo from '../assets/workflowLogo.png'
 import dynamic from 'next/dynamic'
 import Link from 'next/link';
@@ -9,7 +7,6 @@ import { useRouter } from 'next/router'
 
 
 const Nav = () => {
-  const { cart, cartOpen, setCartOpen } = useContext(CartContext)
 
   const [open, setOpen] = useState(false)
 
@@ -22,11 +19,6 @@ const Nav = () => {
     router.reload();
   } 
   
-
-  let cartQuantity = 0
-  cart.map(item => {
-    return (cartQuantity += item?.variantQuantity)
-  })
 
   return (
     <header className="bg-cgrey px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-20 top-0 left-0  dark:border-gray-600">
