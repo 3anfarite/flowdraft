@@ -2,13 +2,18 @@ import React, { useEffect, useState } from 'react'
 import Accordion from './Accordion';
 import Link from 'next/link';
 import Image from "next/image"
+import { useRouter } from 'next/router';
 
 
-const CoursePageContent = ({ course }) => {
+const CoursePageContent = ({ courses }) => {
+   
+   const router = useRouter();
+   const courseId = Object.keys(router.query)[0]*1
+   const course =  courses[courseId-1]
 
 
    useEffect(() => {
-      console.log("lenght", course?.bonus?.length)
+      console.log("course", course)
    }, [])
 
 
@@ -17,11 +22,11 @@ const CoursePageContent = ({ course }) => {
          <div className="container px-5 pb-24 mx-auto" key={course?.id} >
 
 
-            <div class="relative bg-gray-800 h-96 mb-10">
-               <Image class="w-full h-full object-cover opacity-50 max-w-none whitespace-pre-line " src={course?.titleImage} alt="Your Image" layout='fill' />
-               <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-                  <h1 class="text-5xl text-black font-bold font-eb whitespace-pre-line ">{course?.courseTitle}</h1>
-                  <h1 class="text-3xl mt-5 text-gray font-bold font-eb">{course?.comingSoon}</h1>
+            <div className="relative h-96 mb-10  ">
+               <Image className="w-full h-full object-cover opacity-50  max-w-none whitespace-pre-line " src={course?.titleImage} alt="Your Image" layout='fill' />
+               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                  <h1 className="text-5xl text-black font-bold font-eb whitespace-pre-line ">{course?.courseTitle}</h1>
+                  <h1 className="text-3xl mt-5 text-gray font-bold font-eb">{course?.comingSoon}</h1>
                </div>
             </div>
 
