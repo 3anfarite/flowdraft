@@ -60,8 +60,8 @@ const CoursePageContent = ({ courses }) => {
                   <p className="leading-relaxed text-lg font-bold font-alt mb-10">{course?.requirement?.length == 0 ? "" : "Requirement"}</p>
                   <ul className="mb-8 space-y-4 text-left text-gray-500 font-alt dark:text-gray-400">
                      {
-                        course?.requirement?.map(requirement => (
-                           <li className="flex items-center space-x-3"  >
+                        course?.requirement?.map((requirement, index) => (
+                           <li key={index} className="flex items-center space-x-3"  >
                               {/* <!-- Icon --> */}
                               <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                               <span>{requirement} </span>
@@ -75,8 +75,8 @@ const CoursePageContent = ({ courses }) => {
                   <p className="leading-relaxed text-lg font-bold font-alt mb-10">{course?.bonus?.length == 0 ? "" : "Bonus"}</p>
                   <ul className="mb-8 space-y-4 text-left text-gray-500 font-alt dark:text-gray-400">
                      {
-                        course?.bonus?.map(bonus => (
-                           <li className="flex items-center space-x-3"  >
+                        course?.bonus?.map((bonus, index) => (
+                           <li key={index} className="flex items-center space-x-3"  >
                               {/* <!-- Icon --> */}
                               <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                               <span>{bonus} </span>
