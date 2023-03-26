@@ -6,9 +6,11 @@ import CourseList from '../components/CourseList';
 import Testimonials from '../components/Testimonials';
 import NLModal from './../components/NLModal';
 import CalendlyComponent from '../components/CalendlyComponent';
+import TrustUs from '../components/TrustUs';
+import { PageWrapper } from './page-wrapper';
 
 
-export default function Home({ courses, hero }) {
+export default function Home({ courses, hero, courseInfo }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -16,7 +18,7 @@ export default function Home({ courses, hero }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 2000);
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,44 +31,49 @@ export default function Home({ courses, hero }) {
   return (
     <div className="">
       <Head>
-        <title>Modern eCommerce</title>
+        <title>WorkFlow</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-        <meta name='description' content='Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more.' />
-        <meta property="og:title" content="Modern eCommerce" />
+        <meta name='description' content='' />
+        <meta property="og:title" content="WorkFlow" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
         <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
         <meta property="og:description"
-          content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more." />
+          content="" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Modern eCommerce" />
+        <meta property="og:site_name" content="WorkFlow" />
 
       </Head>
-      <Hero hero={hero} />
-      <NLModal onClose={handleClose} visible={isOpen} />
+      <PageWrapper>
+        <Hero hero={hero} />
+        <NLModal onClose={handleClose} visible={isOpen} />
 
-      <CoursesSection />
-      <Testimonials />
-      <div id="discover-more">
-        <CourseList courses={courses} />
-      </div>
-
-      <CalendlyComponent />
+        <CoursesSection courseInfo={courseInfo} />
+        <Testimonials />
+        <div id="discover-more">
+          <CourseList courses={courses} />
+        </div>
+        <TrustUs />
+        <CalendlyComponent />
+      </PageWrapper>
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const data = await import("../assets/data/courseData.json");
+  const data = await import("../assets/data/courseDetails.json");
   const courses = data.courses;
 
   const results = await import("../assets/data/HeroSection.json");
-  const hero = results.default;
+  const hero = results.hero;
+
+  const infos = await import("../assets/data/CourseSection.json");
+  const courseInfo = infos.courseInfo;
 
   return {
     props: {
-      courses,hero
+      courses, hero, courseInfo
     },
   };
 }

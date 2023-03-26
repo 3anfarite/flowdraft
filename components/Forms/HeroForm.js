@@ -1,20 +1,28 @@
-import {useState} from 'react'
-import axios  from 'axios';
+import React from 'react'
+import { useState } from 'react'
+import axios from 'axios';
 
-const hero = () => {
+const HeroForm = () => {
 
    const [title, setTitle] = useState("");
-    const [para, setPara] = useState("");
+   const [para, setPara] = useState("");
 
-    const handleSave = async () => {
-        const newData = { title, para };
-        try {
-          const response = await axios.post('/api/validate-hero', newData);
-          console.log(response.data.message);
-        } catch (error) {
-          console.error(error);
-        }
+   const handleSave = async () => {
+      const newData = {
+        hero: 
+          {
+            title: title || '',
+            para: para || '',
+          },
+        
       };
+      try {
+        const response = await axios.post('/api/validate-hero', newData);
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
    return (
       <>
@@ -22,7 +30,7 @@ const hero = () => {
 
             <div class="mb-6">
                <label for="base-input" className="block mb-2 text-sm font-medium text-black ">Edit Hero Title</label>
-               <input onChange={(e) => setTitle(e.target.value)}  type="text" id="base-input" className="bg-white border border-gray-300 text-black text-sm  focus:gray focus:gray block w-1/2 p-2.5 " />
+               <input onChange={(e) => setTitle(e.target.value)} type="text" id="base-input" className="bg-white border border-gray-300 text-black text-sm  focus:gray focus:gray block w-1/2 p-2.5 " />
             </div>
             <div className="mb-6">
                <label for="large-input" className="block mb-2 text-sm font-medium text-black ">Edit Hero Paragraph</label>
@@ -31,7 +39,7 @@ const hero = () => {
 
             <div className="mt-5 mx-auto hidden md:flex md:mt-8" onClick={handleSave} >
                <a className=" inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
-                  Edit 
+                  Edit
                </a>
             </div>
          </div>
@@ -39,4 +47,4 @@ const hero = () => {
    )
 }
 
-export default hero
+export default HeroForm

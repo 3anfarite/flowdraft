@@ -10,9 +10,10 @@ import 'swiper/css'
 import 'swiper/swiper-bundle.css';
 import Link from 'next/link';
 
-const CoursesSection = () => {
+const CoursesSection = ({courseInfo}) => {
 
    SwiperCore.use([Pagination, EffectFade, Autoplay])
+
 
 
    const autoplay = {
@@ -31,8 +32,8 @@ const CoursesSection = () => {
          <div className="bg-cgrey my-24 ">
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                <div className="font-normal text-black order-1 sm:text-lg dark:text-gray-400">
-                  <h2 className="mb-4 text-5xl tracking-tight font-eb font-bold md:text-black text-black ">{`We didn't reinvent the wheel`}</h2>
-                  <p className="mb-4 font-alt ">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. </p>
+                  <h2 className="mb-4 text-5xl tracking-tight font-eb font-bold md:text-black text-black ">Nous n'avons pas réinventé la roue.</h2>
+                  <p className="mb-4 font-alt ">Workflows est une startup dotée d'une équipe de créatifs, architectes, et technologistes. Nous proposons des services de formation, de modélisation et de design paramétrique et computationnel pour tout vos projets complexes et non-standard. <a href="www.wwworkflows.com" >  </a> </p>
                   <div className="mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
                      <Link href="/courses">
                         <a className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
@@ -43,7 +44,7 @@ const CoursesSection = () => {
                </div>
 
                <div className="gap-4 mt-8 py-10">
-                  <Swiper
+                  {/* <Swiper
                      slidesPerView={1}
                      autoplay={autoplay}
                      loop={true}
@@ -65,7 +66,10 @@ const CoursesSection = () => {
                         <Image className="" src={aboutImage2} alt="office content 1" />
                      </SwiperSlide>
 
-                  </Swiper>
+                  </Swiper> */}
+                  <div class="aspect-w-16 aspect-h-9">
+                     <iframe src="https://www.youtube.com/embed/VB3UhQQhJ34?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aut ></iframe>
+                  </div>
                </div>
 
             </div>

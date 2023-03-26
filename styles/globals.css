@@ -12,7 +12,9 @@
 
 @layer base {
    html {
-     scroll-behavior: smooth;
-     
+     scroll-behavior: smooth; 
    }
  }
+
+ ol { @apply list-disc }
+ 

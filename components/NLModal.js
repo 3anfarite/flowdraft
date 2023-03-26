@@ -47,8 +47,8 @@ const NLModal = ({ onClose, visible }) => {
                      <div className="mb-6 relative mx-auto ">
                         <Image width={75} height={30} className="absolute top-0 left-0" src={logo} alt="" />
                      </div>
-                     <h2 className="mb-3 text-4xl md:text-5xl text-center font-bold font-eb tracking-px-n leading-tight">Join Our Newsletter</h2>
-                     <p className="mb-11 font-medium text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to the condimentum vitae vel purus.</p>
+                     <h2 className="mb-3 text-4xl md:text-5xl text-center font-bold font-eb tracking-px-n leading-tight">Rejoignez notre communautée</h2>
+                     <p className="mb-11 font-medium text-gray-600 leading-relaxed">Inscrivez vous pour recevoir les dernières nouvelles des formations, tips and tricks, et les dates de nos webinaires gratuits online.</p>
 
                      {/* SUBSTACK NEWSLETTER */}
 

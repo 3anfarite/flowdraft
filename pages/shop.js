@@ -1,4 +1,6 @@
+import ComingSoon from '../components/ComingSoon';
 import ShopPage from '../components/ShopPage';
+import { PageWrapper } from './page-wrapper';
 
 
 const shop = ({ products }) => {
@@ -6,9 +8,12 @@ const shop = ({ products }) => {
 
   return (
 
-    <div className="bg-cgrey">
-    <ShopPage products={products} />
-    </div>
+    <PageWrapper>
+      <div className="bg-cgrey">
+        {/* <ShopPage products={products} /> */}
+        <ComingSoon />
+      </div>
+    </PageWrapper>
   )
 }
 

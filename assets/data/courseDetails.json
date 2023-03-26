@@ -1,0 +1,87 @@
+{
+   "courses": [
+      {
+         "id": 1,
+         "courseTitle": "Les Indispensables Rhinoceros + Grasshopper",
+         "courseDetailTitle": "Formation 1 : Les Indispensables Rhinoceros + Grasshopper",
+         "description": "Nous estimons que la formation d'architecture manque en matière de technologie de production. Plus explicitement, on parle des méthodes d'inter-opérabilité entre plusieurs logiciels afin d'explorer plus de formes sans pour autant être contraints aux limites des differents logiciels et tout en gagnant en temps et en effort.\n \n «Les Indispensables» est une formation préparatoires d'un Workflow plus avancé en utilisant le logiciel de modélisation Rhincoeros et son Plugin de paramétrage algorithmique Grasshopper, utilisés dans les plus grandes agences d'architecture mondiales. \n \n Ce workflow de production est une démarche qui permet une flexibilité tout au long du projet en maintenant le contrôle sur la géomètrie et sa mise en place de puis la phase d'étude à la phase de construction.",
+         "comingSoon": "COMING SOON",
+         "link":"https://www.youtube.com/embed/wd93712OcHg",
+         "titleImage": "/coursesMedia/courseMedia1.jpeg",
+         "sideImage": "/coursesMedia/sideMedia1.jpeg",
+         "price": "COMING SOON",
+         "subtitle": "Les Indispensables est une formation préparatoires d'un Workflow plus avancé en utilisant le logiciel de modélisation Rhincoeros et son Plugin de paramétrage algorithmique Grasshopper, utilisés dans les plus grandes agences d'architecture mondiales",
+         "accordeon": [
+            {
+               "id": "kvsiod979834",
+               "description": "8 heures de formation\n \n 6 Fichiers d'Exercice\n \n Enregistrement Zoom",
+               "title": "PARTIE I - FORMATION RHINOCEROS 3D"
+            },
+            {
+               "id": "kvfsd79834",
+               "description": "8 heures de formation.\n \n Office Hours 4 Fichiers d'Exercice.\n \n Enregistrement Zoom",
+               "title": "PARTIE II - FORMATION GRASSHOPPER 3D"
+            }
+         ],
+         "learn": [
+            "1. Le logiciel de modélisation Rhinoceros",
+            "2. Une adaptabilté aux géomètries complexes",
+            "3. Les meilleurs méthodes et Best-Practices d'organisation du projet 3D",
+            "4. La modélisation algorithmique en utilisant Grasshopper3D",
+            "5. Des stratégies hybrides d'optimisation de temps"
+         ],
+         "requirement": [
+            "Une bonne connexion Internet",
+            "PC i5 minimum",
+            "Deux moniteurs de préférence"
+         ],
+         "bonus": []
+      },
+      {
+         "id": 2,
+         "courseTitle": "Rhino + Grasshopper - Intermediate",
+         "courseDetailTitle": "Rhino + Grasshopper - Intermediate",
+         "description": "Nous estimons que la formation d'architecture manque en matière de technologie de production. Plus explicitement, on parle des méthodes d'inter-opérabilité entre plusieurs logiciels afin d'explorer plus de formes sans pour autant être contraints aux limites des differents logiciels et tout en gagnant en temps et en effort.\n \n La formation Intermediate est une formation axée sur un Workflow plus poussé en design algorithmique. Nous allons apprendre des nouvelles stratégies de modélisation complexe en \n \n Ce workflow de production est une démarche qui permet une flexibilité tout au long du projet en maintenant le contrôle sur la géomètrie et sa mise en place de puis la phase d'étude à la phase de construction.",
+         "comingSoon": "COMING SOON",
+         "link":"https://www.youtube.com/embed/wd93712OcHg",
+         "titleImage": "/coursesMedia/courseMedia2.jpeg",
+         "sideImage": "/coursesMedia/sideMedia2.jpeg",
+         "price": "COMING SOON",
+         "subtitle": "La formation Intermediate est une formation axée sur un Workflow plus poussé en design algorithmique.",
+         "accordeon": [],
+         "learn": [
+            "1. Modélisation et formfinding complexe",
+            "2. Mieux gérér vos definitions grasshopper en phase de projet.",
+            "3. Des stratégies de conception d'analyse de façades complexes (cladding, panneling, rationalisation etc...)",
+            "4. La création de systèmes hybride de modélisation rapide et non destructives."
+         ],
+         "requirement": [],
+         "bonus": []
+      },
+      {
+         "id": 3,
+         "courseTitle": "MODELISAITON BIM HYBRIDE : Synchronization Rhino/Revit/Archicad ",
+         "courseDtailTitle": "MODELISAITON BIM HYBRIDE : Synchronization Rhino/Revit/Archicad",
+         "description": "Cette formation accelérée est focalisée sur les workflows de production des documents techniques au service du projet, nottament l'automatisation des taches de plannification et de dessin 2D\n\nNous allons explorer les passerelles existantes en géomètries entre des logiciels de modélisation (Rhino et Grasshopper) et ceux de modélisation BIM (Revit et Archicad) tout en optimisant de temps de production à partir de la phase esquisse\n\nCe workflow de production est une démarche qui permet une flexibilité tout au long du projet en maintenant le contrôle sur la géomètrie et sa mise en place de puis la phase d'étude à la phase de construction.",
+         "comingSoon": "COMING SOON",
+         "link":"https://www.youtube.com/embed/wd93712OcHg",
+         "titleImage": "/coursesMedia/courseMedia3.jpeg",
+         "sideImage": "/coursesMedia/sideMedia3.jpeg",
+         "price": "COMING SOON",
+         "subtitle": "Cette formation accelérée est focalisée sur les workflows de production des documents techniques au service du projet, nottament l'automatisation des taches de plannification et de dessin 2D",
+         "accordeon": [],
+         "learn": [
+            "1. Synchronizer vos modèles 3D avec les logiciels BIM",
+            "2. Créer vos propres stratégies de conception rapide (Automatic Walls, Automatic Doors, etc...)",
+            "3. Transférer vos modèles complexes de façades sur intérface BIM",
+            "4. Une multitude de stratégies hybrides d'optimisation en effort et en temps"
+         ],
+         "requirement": [
+            "Une bonne connexion Internet",
+            "PC i5 minimum",
+            "Deux moniteurs de préférence"
+         ],
+         "bonus": []
+      }
+   ]
+}
