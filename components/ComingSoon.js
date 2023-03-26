@@ -13,11 +13,11 @@ const ComingSoon = () => {
                      <Image width={275} height={130} className="" src={logo} alt="" />
                   </div>
                   <h3 class='text-2xl font-bold font-eb md:text-4xl'>Coming Soon!</h3>
-<h3 class='text-lg font-bold font-eb md:text-2xl text-gray '>
-Stay tuned for something amazing!!!</h3>
-                  
+                  <h3 class='text-lg font-bold font-eb md:text-2xl text-gray '>
+                     Stay tuned for something amazing!!!</h3>
+
                </div>
-               
+
             </div>
          </div>
       </div>

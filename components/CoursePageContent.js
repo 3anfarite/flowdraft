@@ -3,13 +3,14 @@ import Accordion from './Accordion';
 import Link from 'next/link';
 import Image from "next/image"
 import { useRouter } from 'next/router';
+import ComingSoon from './ComingSoon';
 
 
 const CoursePageContent = ({ courses }) => {
-   
+
    const router = useRouter();
-   const courseId = Object.keys(router.query)[0]*1
-   const course =  courses[courseId-1]
+   const courseId = Object.keys(router.query)[0] * 1
+   const course = courses[courseId - 1]
 
 
    useEffect(() => {
@@ -38,7 +39,8 @@ const CoursePageContent = ({ courses }) => {
                   </h2>
 
                   <div class="aspect-w-16 aspect-h-9">
-                     <iframe src={course?.link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     {course?.link == ""? <ComingSoon/> : <iframe src={course?.link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> }
+                     
                   </div>
 
                   <p className="leading-relaxed text-lg font-alt my-10 whitespace-pre-line "  >{course?.description}</p>
@@ -86,7 +88,7 @@ const CoursePageContent = ({ courses }) => {
                   </ul>
                </div>
                <div className="col-span-1 sm:col-span-1">
-                  <img src={course?.sideImage}  className="pb-5 w-full object-cover " style={{ height: "28em" }} />
+                  <img src={course?.sideImage} className="pb-5 w-full object-cover " style={{ height: "28em" }} />
                   {
                      course?.accordeon?.map((item, index) => {
                         return (
