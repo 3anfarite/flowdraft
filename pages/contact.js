@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactPage from '../components/ContactPage'
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 
 
 const contact = () => {
