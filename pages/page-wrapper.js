@@ -2,7 +2,7 @@ import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 
 
-export const PageWrapper = ({ children }) => (
+export default function PageWrapper({ children }) {
    <>
       <AnimatePresence>
          <motion.div
@@ -15,4 +15,4 @@ export const PageWrapper = ({ children }) => (
          </motion.div>
       </AnimatePresence>
    </>
-)
+}
