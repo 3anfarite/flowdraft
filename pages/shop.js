@@ -1,5 +1,5 @@
 import ComingSoon from '../components/ComingSoon';
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 
 
 const shop = ({ products }) => {

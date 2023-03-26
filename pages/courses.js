@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 import CoursePage from '../components/CoursePage'
 
 const courses = ({ courses }) => {

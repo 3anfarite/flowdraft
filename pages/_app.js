@@ -5,7 +5,6 @@ import 'swiper/scss/pagination'
 import Layout from '../components/Layout'
 import ShopProvider from '../context/shopContext'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 
 
 

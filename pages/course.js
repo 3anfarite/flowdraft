@@ -1,5 +1,5 @@
 import CoursePageContent from './../components/CoursePageContent';
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 
 
 const course = ({courses}) => {

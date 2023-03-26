@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials';
 import NLModal from './../components/NLModal';
 import CalendlyComponent from '../components/CalendlyComponent';
 import TrustUs from '../components/TrustUs';
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 
 
 export default function Home({ courses, hero, courseInfo }) {
