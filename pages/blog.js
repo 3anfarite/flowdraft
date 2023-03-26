@@ -1,7 +1,7 @@
 import React from 'react'
 import Script from 'next/script'
 import BlogCard from '../components/BlogCard'
-import { PageWrapper } from './page-wrapper';
+import { PageWrapper } from '../utils/page-wrapper';
 
 
 const blog = () => {
