@@ -12,10 +12,10 @@ const TrustUs = () => {
   return (
 
    <section className="bg-white py-20 lg:py-[120px]">
-     <div className="container mx-auto">
+     <div className="container px-12 mx-auto">
        <div className="-mx-4 flex flex-wrap">
          <div className="w-full px-4">
-         <h1 className="text-5xl text-center font-extrabold font-eb mb-4 pb-20 text-black">Ils nous ont fait confiance:</h1>
+         <h1 className="text-5xl text-center font-extrabold font-eb mb-4 pb-20 text-black">Ils nous ont fait confiance</h1>
           
            <div className="flex flex-wrap items-center justify-center">
              <a 

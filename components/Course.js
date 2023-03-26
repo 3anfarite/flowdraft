@@ -24,7 +24,7 @@ const Course = ({ course }) => {
           <p className="text-base text-body-color">
             {course.subtitle}
           </p>
-          <div className="mt-5 max-w-md mx-auto hidden md:flex md:mt-8">
+          <div className="mt-5 max-w-md mx-auto md:flex md:mt-8">
             <Link
               href={{
                 pathname: '/course',

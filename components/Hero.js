@@ -13,7 +13,7 @@ export default function Hero({ hero }) {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="mt-12 lg:mt-0">
-            <h1 className="text-3xl md:text-4xl font-eb xl:text-5xl font-bold tracking-tight mb-12">Nous couvrons ce que votre école a manqué!</h1>
+            <h1 className="mb-4 text-5xl tracking-tight font-eb font-bold md:text-black text-black ">Nous couvrons ce que votre école a manqué!</h1>
             <p className="mb-4 font-alt text-lg "><strong>AFTERWORK WORKFLOW </strong>est une Plateforme éducative pour professionnels axée sur la conception paramétrique et computationnelle.</p>
             <div className="mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
 

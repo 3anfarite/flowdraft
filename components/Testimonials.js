@@ -51,11 +51,10 @@ const Testimonials = () => {
   return (
 
     <div className="text-white bg-black my-24">
-      <div className="container px-24 py-24 mx-auto">
+      <div className="container px-12 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
 
-          <h1 className="text-5xl font-extrabold font-eb mb-4 text-white"
-          >
+        <h1 class="mb-4 text-5xl tracking-tight font-eb font-bold text-white ">
             Découvrez ce que disent nos étudiants sur le cours.
           </h1>
 
