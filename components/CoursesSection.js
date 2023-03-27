@@ -31,10 +31,10 @@ const CoursesSection = ({courseInfo}) => {
 
          <div className="bg-cgrey my-24 ">
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-               <div className="font-normal text-black order-1 sm:text-lg dark:text-gray-400">
+               <div className="font-normal items-center text-center text-black order-1 sm:text-lg dark:text-gray-400">
                   <h2 className="mb-4 text-5xl tracking-tight font-eb font-bold md:text-black text-black ">Nous n'avons pas réinventé la roue.</h2>
                   <p className="mb-4 font-alt ">Workflows est une startup dotée d'une équipe de créatifs, architectes, et technologistes. Nous proposons des services de formation, de modélisation et de design paramétrique et computationnel pour tout vos projets complexes et non-standard. <a href="www.wwworkflows.com" >  </a> </p>
-                  <div className="mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
+                  <div className="mt-5 max-w-md mx-auto md:flex justify-center items-center md:mt-8">
                      <Link href="/courses">
                         <a className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
                            See all courses

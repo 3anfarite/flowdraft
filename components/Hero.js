@@ -8,14 +8,14 @@ export default function Hero({ hero }) {
   return (
 
 
-    <div className="px-6 my-24 py-12 md:px-12 bg-gray-50 text-black text-center lg:text-left">
+    <div className="px-6 md:my-24 py-12 md:px-12 bg-gray-50 text-black text-center lg:text-left">
       <div className="container mx-auto xl:px-32">
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="mt-12 lg:mt-0">
             <h1 className="mb-4 text-5xl tracking-tight font-eb font-bold md:text-black text-black ">Nous couvrons ce que votre école a manqué!</h1>
             <p className="mb-4 font-alt text-lg "><strong>AFTERWORK WORKFLOW </strong>est une Plateforme éducative pour professionnels axée sur la conception paramétrique et computationnelle.</p>
-            <div className="mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
+            <div className="mt-5 max-w-md mx-auto md:flex justify-center items-center md:mt-8">
 
               <a href="#discover-more" className="inline-flex items-center font-ibm justify-center h-12 px-6 mr-6 font-semibold py-3 border-transparent text-white bg-black hover:bg-gray">
                 Discover More

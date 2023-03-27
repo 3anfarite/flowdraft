@@ -117,7 +117,7 @@ if(data.email!=="" || data.subject !=="" || data.userName !=="" || data.message 
                 <span className="sr-only">Loading...</span>
               </div>
               :
-              <button id="handle-submit-email" type='button' onClick={() => handleSubmit(userName, subject, email, message)} className="bg-black mt-5 max-w-md mx-auto hidden md:flex justify-center items-center md:mt-8">
+              <button id="handle-submit-email" type='button' onClick={() => handleSubmit(userName, subject, email, message)} className="bg-black mt-5 max-w-md mx-auto md:flex justify-center items-center md:mt-8">
                 <a className="inline-flex items-center font-ibm justify-center h-12 px-6 font-semibold py-3 -transparent text-white  hover:bg-gray">
                   Send
                 </a>
