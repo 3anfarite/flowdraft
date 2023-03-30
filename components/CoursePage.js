@@ -14,12 +14,10 @@ const CoursePage = ({courses}) => {
                   <h2
                      className="font-bold text-5xl font-eb sm:text-4xl md:text-[40px] text-black mb-4"
                   >
-                     Our Recent News
+                     Nos formations sur demande:
                   </h2>
                   <p className="text-base font-alt text-black">
-                     There are many variations of passages of Lorem Ipsum available
-                     but the majority have suffered alteration in some form.
-                  </p>
+                  Nous offrons trois formations incluant les meilleurs workflows de production pour votre carrière d'architecte technologue                  </p>
                </div>
             </div>
          </div>

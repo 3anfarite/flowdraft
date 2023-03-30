@@ -78,8 +78,8 @@ if(data.email!=="" || data.subject !=="" || data.userName !=="" || data.message 
       <ToastContainer />
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-5xl text-2xl font-semibold font-eb mb-4 text-black">Contact Us</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed font-alt text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+          <h1 className="sm:text-5xl text-2xl font-semibold font-eb mb-4 text-black">Contactez nous</h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed font-alt text-base">Nous sommes heureux de répondre à toutes vos questions concernant les formations, contactez nous!.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
