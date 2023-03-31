@@ -10,12 +10,12 @@ const TestCard = () => {
          <div className='flex px-4 pt-4' >
             <img className="w-10 h-10 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80" alt="" />
             <div className='' >
-               <p className="text-xs lg:text-base font-bold tracking-tight font-alt text-black">John Do</p>
-               <p className="text-xs lg:text-xs font-light tracking-tight font-alt  text-black">Graphic Designer</p>
+               <p className="text-xs lg:text-base font-bold tracking-tight font-alt text-black">Souhail Zoubeidi</p>
+               <p className="text-xs lg:text-xs font-light tracking-tight font-alt  text-black">Etudiant à l'UIR 5eme année</p>
             </div>
          </div>
          <div className=" py-2 leading-normal">
-            <p className="mx-4 lg:text-base md:text-base text-xs font-normal text-black ">Best courses, easy to understand and well structured</p>
+            <p className="mx-4 lg:text-base md:text-base text-xs font-normal text-black ">Mood paisible, aucun malaise ni difficultés à communiquer.</p>
          </div>
       </motion.div>
 
