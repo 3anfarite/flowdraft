@@ -8,7 +8,6 @@ import NLModal from './../components/NLModal';
 import CalendlyComponent from '../components/CalendlyComponent';
 import TrustUs from '../components/TrustUs';
 import { PageWrapper } from '../utils/page-wrapper';
-import Script from 'next/script';
 
 
 export default function Home({ courses, hero, courseInfo }) {
@@ -44,7 +43,6 @@ export default function Home({ courses, hero, courseInfo }) {
           content="" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="WorkFlow" />
-        <Script async src="https://cdn.splitbee.io/sb.js" ></Script>
       </Head>
       <PageWrapper>
         <Hero hero={hero} />
