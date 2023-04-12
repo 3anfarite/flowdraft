@@ -126,8 +126,8 @@ if(data.email!=="" || data.subject !=="" || data.userName !=="" || data.message 
             }
 
             <div className="p-2 w-full pt-8 mt-8 -t text-center">
-              <p className="leading-normal my-5">49 Smith St.
-                <br />Saint Cloud, MN 56301
+              <p className="leading-normal my-5">3543 bis 23
+                <br />Rabat Hay Coworking 
               </p>
               <span className="inline-flex ">
                 <a className="text-black p-5 ">
