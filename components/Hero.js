@@ -8,7 +8,7 @@ export default function Hero({ hero }) {
   return (
 
 
-    <div className="px-6 md:my-24 py-12 md:px-12 bg-gray-50 text-black text-center lg:text-left">
+    <div className="px-6 md:my-24 py-12 md:px-12  text-black text-center lg:text-left">
       <div className="container mx-auto xl:px-32">
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
